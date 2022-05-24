@@ -3,7 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid, regular } from '@fortawesome/fontawesome-svg-core/import.macro'
 import "./intro.css"
 
-const intro = () => {
+const intro = ({dM}) => {
+    const scroll = () => {
+        window.scrollTo({
+            top: 10000,
+            behavior: "smooth"
+        })
+    }
   return (
     <div className='i'>
         <div className="i-left">
@@ -23,7 +29,7 @@ const intro = () => {
                     I design and develop services for customers of all sizes. specializing in creating stylish modern websites, web applications, and online stores.
                 </p>
             </div>
-            <FontAwesomeIcon className='i-scroll' fontSize={50} icon={solid('sort')} />
+            <FontAwesomeIcon onClick={scroll} color={dM ? "#fff" : "#000"} className='i-scroll' fontSize={50} icon={solid('sort')} />
         </div>
         <div className="i-right">
             <div className="i-bg"></div>

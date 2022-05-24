@@ -11,7 +11,7 @@ const App = () => {
   const darkMode = theme.state.darkMode;
   return(
     <div style={{backgroundColor: darkMode ? "#222" : "#fff", color: darkMode && "#fff"}} >
-      <Intro />
+      <Intro dM={darkMode} />
       <About />
       <ProductList />
       <Contact />

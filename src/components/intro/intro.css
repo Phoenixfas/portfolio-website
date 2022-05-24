@@ -87,4 +87,31 @@
     .i{
         flex-direction: column;
     }
+    .i-left-wrapper{
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .i-desc{
+        display: none;
+    }
+    .i-name{
+        font-size: 50px;
+    }
+    .i-right{
+        justify-content: center;
+        overflow: hidden;
+    }
+    .i-img{
+        width: 70%;
+        height: 110%;
+        margin-top: 100px;
+        position: absolute;
+        top: -20%;
+    }
+    .i-scroll{
+        z-index: 999;
+    }
 }
