@@ -1,5 +1,5 @@
 import React from 'react'
-import about from './about.css'
+import './about.css'
 import Award from '../../img/certificate.jpg'
 
 const About = () => {
